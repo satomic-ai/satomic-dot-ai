@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Coming Soon</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: #000;
       color: white;
       font-family: 'Inter Tight', sans-serif;
-      font-weight: 300;
+      font-weight: 200;
       text-align: center;
       padding: 40px 20px;
     }
@@ -21,39 +21,44 @@
     }
 
     .mission {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
+      font-size: 0.95rem;
+      font-weight: 200;
+      margin: 0 auto 40px;
+      max-width: 600px;
+      line-height: 1.4;
     }
 
     .coming-soon {
-      font-size: 1.3rem;
-      letter-spacing: 0.25em;
-      margin-bottom: 40px;
+      font-size: 1.7rem;
+      font-weight: 300;
+      letter-spacing: 0.35em;
+      margin-bottom: 50px;
       white-space: nowrap;
     }
 
     .contact-block {
-      display: inline-block;
-      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
       font-size: 1rem;
-      line-height: 1.8em;
-      max-width: 90vw;
+      align-items: center;
     }
 
     .contact-line {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-
-    .label {
-      margin-right: 10px;
+      flex-wrap: nowrap;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 300;
+      font-size: 0.95rem;
     }
 
     .email {
       font-family: monospace;
+      font-weight: 200;
       color: white;
       text-decoration: none;
+      white-space: nowrap;
     }
 
     .email:hover {
@@ -61,17 +66,19 @@
     }
 
     @media (max-width: 480px) {
-      .mission, .coming-soon, .contact-block {
-        font-size: 1rem;
+      .mission {
+        font-size: 0.9rem;
       }
 
       .coming-soon {
-        letter-spacing: 0.15em;
+        font-size: 1.4rem;
+        letter-spacing: 0.28em;
       }
 
       .contact-line {
-        flex-direction: column;
-        align-items: flex-start;
+        font-size: 0.9rem;
+        flex-wrap: wrap;
+        text-align: center;
       }
     }
   </style>
@@ -90,19 +97,19 @@
 
   <div class="contact-block">
     <div class="contact-line">
-      <span class="label">If you’re a drug hunter:</span>
+      <span>If you’re a drug hunter:</span>
       <a class="email" href="mailto:partner@satomic.ai">partner@satomic.ai</a>
     </div>
     <div class="contact-line">
-      <span class="label">If you want to join our mission:</span>
+      <span>If you want to join our mission:</span>
       <a class="email" href="mailto:careers@satomic.ai">careers@satomic.ai</a>
     </div>
     <div class="contact-line">
-      <span class="label">If you’re an investor:</span>
+      <span>If you’re an investor:</span>
       <a class="email" href="mailto:invest@satomic.ai">invest@satomic.ai</a>
     </div>
     <div class="contact-line">
-      <span class="label">For all other inquiries:</span>
+      <span>For all other inquiries:</span>
       <a class="email" href="mailto:info@satomic.ai">info@satomic.ai</a>
     </div>
   </div>
