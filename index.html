@@ -37,31 +37,38 @@
     }
 
     .contact-block {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      font-size: 1rem;
-      align-items: center;
-    }
-
-    .contact-line {
-      display: flex;
-      flex-wrap: nowrap;
-      justify-content: center;
-      gap: 8px;
+      display: table;
+      margin: 0 auto;
+      font-size: 0.92rem;
       font-weight: 300;
-      font-size: 0.95rem;
     }
 
-    .email {
-      font-family: monospace;
-      font-weight: 200;
-      color: white;
-      text-decoration: none;
+    .contact-row {
+      display: table-row;
+      line-height: 2;
+    }
+
+    .label-cell {
+      display: table-cell;
+      padding-right: 10px;
+      text-align: right;
       white-space: nowrap;
     }
 
-    .email:hover {
+    .email-cell {
+      display: table-cell;
+      font-family: monospace;
+      font-weight: 200;
+      text-align: left;
+      white-space: nowrap;
+    }
+
+    .email-cell a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .email-cell a:hover {
       text-decoration: underline;
     }
 
@@ -75,10 +82,8 @@
         letter-spacing: 0.28em;
       }
 
-      .contact-line {
-        font-size: 0.9rem;
-        flex-wrap: wrap;
-        text-align: center;
+      .contact-block {
+        font-size: 0.88rem;
       }
     }
   </style>
@@ -96,21 +101,21 @@
   </div>
 
   <div class="contact-block">
-    <div class="contact-line">
-      <span>If you’re a drug hunter:</span>
-      <a class="email" href="mailto:partner@satomic.ai">partner@satomic.ai</a>
+    <div class="contact-row">
+      <div class="label-cell">If you’re a drug hunter:</div>
+      <div class="email-cell"><a href="mailto:partner@satomic.ai">partner@satomic.ai</a></div>
     </div>
-    <div class="contact-line">
-      <span>If you want to join our mission:</span>
-      <a class="email" href="mailto:careers@satomic.ai">careers@satomic.ai</a>
+    <div class="contact-row">
+      <div class="label-cell">If you want to join our mission:</div>
+      <div class="email-cell"><a href="mailto:careers@satomic.ai">careers@satomic.ai</a></div>
     </div>
-    <div class="contact-line">
-      <span>If you’re an investor:</span>
-      <a class="email" href="mailto:invest@satomic.ai">invest@satomic.ai</a>
+    <div class="contact-row">
+      <div class="label-cell">If you’re an investor:</div>
+      <div class="email-cell"><a href="mailto:invest@satomic.ai">invest@satomic.ai</a></div>
     </div>
-    <div class="contact-line">
-      <span>For all other inquiries:</span>
-      <a class="email" href="mailto:info@satomic.ai">info@satomic.ai</a>
+    <div class="contact-row">
+      <div class="label-cell">For all other inquiries:</div>
+      <div class="email-cell"><a href="mailto:info@satomic.ai">info@satomic.ai</a></div>
     </div>
   </div>
 
