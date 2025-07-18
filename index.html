@@ -12,44 +12,67 @@
       font-family: 'Inter Tight', sans-serif;
       font-weight: 300;
       text-align: center;
-      padding: 60px 20px;
+      padding: 40px 20px;
     }
 
     img {
-      width: 200px;
-      margin-bottom: 40px;
+      width: 180px;
+      margin-bottom: 30px;
     }
 
     .mission {
-      font-size: 1.4em;
-      margin-bottom: 40px;
+      font-size: 1.2rem;
+      margin-bottom: 30px;
     }
 
     .coming-soon {
-      font-size: 1.8em;
+      font-size: 1.3rem;
       letter-spacing: 0.25em;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
+      white-space: nowrap;
     }
 
     .contact-block {
       display: inline-block;
       text-align: left;
+      font-size: 1rem;
       line-height: 1.8em;
+      max-width: 90vw;
+    }
+
+    .contact-line {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
 
     .label {
-      font-size: 1.2em;
+      margin-right: 10px;
     }
 
     .email {
       font-family: monospace;
-      font-size: 1.2em;
       color: white;
       text-decoration: none;
     }
 
     .email:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      .mission, .coming-soon, .contact-block {
+        font-size: 1rem;
+      }
+
+      .coming-soon {
+        letter-spacing: 0.15em;
+      }
+
+      .contact-line {
+        flex-direction: column;
+        align-items: flex-start;
+      }
     }
   </style>
 </head>
@@ -62,22 +85,27 @@
   </div>
 
   <div class="coming-soon">
-    C O M I N G &nbsp;&nbsp; S O O N
+    C O M I N G &nbsp; S O O N
   </div>
 
   <div class="contact-block">
-    <div><span class="label">If you’re a drug hunter:</span><br>
-      <a class="email" href="mailto:partner@satomic.ai">partner@satomic.ai</a></div><br>
-
-    <div><span class="label">If you want to join our mission:</span><br>
-      <a class="email" href="mailto:careers@satomic.ai">careers@satomic.ai</a></div><br>
-
-    <div><span class="label">If you’re an investor:</span><br>
-      <a class="email" href="mailto:invest@satomic.ai">invest@satomic.ai</a></div><br>
-
-    <div><span class="label">For all other inquiries:</span><br>
-      <a class="email" href="mailto:info@satomic.ai">info@satomic.ai</a></div>
+    <div class="contact-line">
+      <span class="label">If you’re a drug hunter:</span>
+      <a class="email" href="mailto:partner@satomic.ai">partner@satomic.ai</a>
+    </div>
+    <div class="contact-line">
+      <span class="label">If you want to join our mission:</span>
+      <a class="email" href="mailto:careers@satomic.ai">careers@satomic.ai</a>
+    </div>
+    <div class="contact-line">
+      <span class="label">If you’re an investor:</span>
+      <a class="email" href="mailto:invest@satomic.ai">invest@satomic.ai</a>
+    </div>
+    <div class="contact-line">
+      <span class="label">For all other inquiries:</span>
+      <a class="email" href="mailto:info@satomic.ai">info@satomic.ai</a>
+    </div>
   </div>
 
 </body>
-</html>Ty
+</html>
